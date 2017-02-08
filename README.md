@@ -1,6 +1,7 @@
 Isolated [Spock](https://github.com/agrafix/Spock) examples
 
 To run an example using Stack:
+
 1. Run ```stack setup && stack build```
 2. ```stack runghc examples/<file.hs>```
 
