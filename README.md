@@ -1,4 +1,4 @@
-Isolated [https://github.com/agrafix/Spock](Spock) examples
+Isolated [Spock](https://github.com/agrafix/Spock) examples
 
 To run an example using Stack:
 1. Run ```stack setup && stack build```
