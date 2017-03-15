@@ -8,8 +8,8 @@ import Data.Monoid ((<>))
 import Web.Spock
 import Web.Spock.Config
 
-import qualified Data.ByteString.Char8 as C
 import qualified Data.Text as T
+import Data.Text.Encoding (decodeUtf8)
 
 main :: IO ()
 main = do
@@ -39,7 +39,7 @@ app = do
   -- Get POST body
   post "body" $ do
     reqBody <- body
-    text ("Body received: " <> T.pack (C.unpack reqBody))
+    text ("Body received: " <> decodeUtf8 reqBody)
 
   -- Parameters
   post "params" $ do
