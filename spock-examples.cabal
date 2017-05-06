@@ -23,6 +23,8 @@ library
                      , mtl >= 2.2.1
                      , text >= 1.2.2.1
                      , unordered-containers >= 0.2.7.2
+                     , warp >= 3.2.11
+                     , warp-tls >= 3.2.3
   default-language:    Haskell2010
 
 source-repository head
